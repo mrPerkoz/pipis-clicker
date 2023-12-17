@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://textures/pipis.png" type="Texture" id=1]
+[ext_resource path="res://scripts/pipis.gd" type="Script" id=2]
+[ext_resource path="res://textures/miss_pipis.png" type="Texture" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.0
+height = 4.0
+
+[node name="pipis" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="pipis_n" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pipis_n"]
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="pipis_n"]
+margin_left = -9.0
+margin_top = -7.0
+margin_right = 9.0
+margin_bottom = 7.0
+texture_normal = ExtResource( 1 )
+
+[node name="miss_pipis" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="miss_pipis"]
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="miss_pipis"]
+margin_left = -9.0
+margin_top = -7.0
+margin_right = 9.0
+margin_bottom = 7.0
+texture_normal = ExtResource( 3 )
+
+[connection signal="pressed" from="pipis_n/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="miss_pipis/TextureButton" to="." method="_on_TextureButton_pressed"]

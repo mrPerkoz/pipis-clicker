@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://textures/golden_pipis.png" type="Texture" id=1]
+[ext_resource path="res://scripts/golden_pipis.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 7.0
+height = 4.0
+
+[node name="golden_pipis" type="Node2D" groups=["gold_pipis"]]
+scale = Vector2( 5, 5 )
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="golden_pipis_button" type="TextureButton" parent="Area2D"]
+margin_left = -9.0
+margin_top = -7.0
+margin_right = 9.0
+margin_bottom = 7.0
+texture_normal = ExtResource( 1 )
+
+[connection signal="pressed" from="Area2D/golden_pipis_button" to="." method="_on_golden_pipis_button_pressed"]

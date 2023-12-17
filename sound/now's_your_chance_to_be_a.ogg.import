@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/now's_your_chance_to_be_a.ogg-2168473f6d844c36c2b3c2a6d9cabf74.oggstr"
+
+[deps]
+
+source_file="res://sound/now's_your_chance_to_be_a.ogg"
+dest_files=[ "res://.import/now's_your_chance_to_be_a.ogg-2168473f6d844c36c2b3c2a6d9cabf74.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

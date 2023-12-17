@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hey_every.ogg-f94961d99c34c5ee9f319536c82e1a48.oggstr"
+
+[deps]
+
+source_file="res://sound/hey_every.ogg"
+dest_files=[ "res://.import/hey_every.ogg-f94961d99c34c5ee9f319536c82e1a48.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

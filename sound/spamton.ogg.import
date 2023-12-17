@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/spamton.ogg-4e605a5073a365935a8cc7eaad97dfcb.oggstr"
+
+[deps]
+
+source_file="res://sound/spamton.ogg"
+dest_files=[ "res://.import/spamton.ogg-4e605a5073a365935a8cc7eaad97dfcb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
